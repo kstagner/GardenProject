@@ -1,0 +1,15 @@
+/* Add a black background color to the top navigation */
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+p{
+    padding-left: 50px;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
