@@ -1,3 +1,23 @@
 <p>
   garden-product works!
 </p>
+
+
+<ul class="product">
+  <li *ngFor="Display all product"
+    [class.selected]="product === selectedProduct"
+    (click)="onSelect(product)">
+    <span class="badge">{{product.id}}</span> {{product.product_name}} <span>$</span> {{product.product_price}}
+  </li>
+</ul>
+
+
+<div *ngIf="selectedProduct">
+  <h2>{{selectedHero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedHero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedProduct.name" placeholder="name">
+    </label>
+  </div>
+</div>
