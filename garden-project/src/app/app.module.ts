@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { GardenHomeComponent } from './garden-home/garden-home.component';
 import { GardenAboutComponent } from './garden-about/garden-about.component';
 import { GardenProductComponent } from './garden-product/garden-product.component';
+import { ProductService } from './services/product.service';
 
 
 const routes = [
@@ -31,7 +32,7 @@ const routes = [
     RouterModule.forRoot(routes),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
